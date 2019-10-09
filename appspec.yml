@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /home/ubuntu/code-deploy-scripts
+hooks:
+  ApplicationStop:
+    - location: scripts/${APPLICATION_NAME}/app-stop.sh
+  BeforeInstall:
+    - location: scripts/${APPLICATION_NAME}/before-install.sh
+  AfterInstall:
+    - location: scripts/${APPLICATION_NAME}/after-install.sh
+  ValidateService:
+    - location: scripts/${APPLICATION_NAME}/validate.sh
