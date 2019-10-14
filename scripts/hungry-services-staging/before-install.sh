@@ -1,3 +1,4 @@
+#!/bin/sh
 if [ "$DEPLOYMENT_GROUP_NAME" = "hungry-services-auth" ]
 then
     echo $DEPLOYMENT_GROUP_NAME
