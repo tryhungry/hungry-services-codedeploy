@@ -1,4 +1,4 @@
-if [ "$DEPLOYMENT_GROUP_NAME" == "hungry-services-auth" ]
+if [ "$DEPLOYMENT_GROUP_NAME" = "hungry-services-auth" ]
 then
     echo $DEPLOYMENT_GROUP_NAME
     aws s3 cp s3://hungry-resource/github-production.pem /root/.ssh/github-production.pem
