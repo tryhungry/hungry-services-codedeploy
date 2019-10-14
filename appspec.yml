@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/code-deploy-scripts
+    destination: /home/ubuntu/
 hooks:
   ApplicationStop:
     - location: scripts/hungry-services-staging/app-stop.sh
