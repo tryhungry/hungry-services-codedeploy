@@ -1,4 +1,5 @@
 #!/bin/bash
+PATH=/home/ubuntu/bin:/home/ubuntu/.local/bin
 if [ "$DEPLOYMENT_GROUP_NAME" = "hungry-services-auth" ]
 then
     echo $DEPLOYMENT_GROUP_NAME
