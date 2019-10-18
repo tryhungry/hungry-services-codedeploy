@@ -9,4 +9,5 @@ then
     rm -rf /home/deploy/hungry-services
     git clone -b feature/uc-users-refactor ssh://git@github.com/tryhungry/hungry-services.git /home/deploy/hungry-services
     sudo chmod 777 /home/deploy/hungry-services/cmd/svc-auth
+    sudo chmod 777 /home/deploy/hungry-services/cmd/svc-auth/proto_auth/auth.pb.go
 fi
