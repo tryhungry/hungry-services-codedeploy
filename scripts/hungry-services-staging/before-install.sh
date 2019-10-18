@@ -7,6 +7,6 @@ then
     eval $(ssh-agent -s)
     ssh-add /root/.ssh/github-production.pem
     rm -rf /home/deploy/hungry-services
-    git clone -b feature/user-service ssh://git@github.com/tryhungry/hungry-services.git /home/deploy/hungry-services
+    git clone -b feature/uc-users-refactor ssh://git@github.com/tryhungry/hungry-services.git /home/deploy/hungry-services
     sudo chmod 777 /home/deploy/hungry-services/cmd/uc-auth
 fi
