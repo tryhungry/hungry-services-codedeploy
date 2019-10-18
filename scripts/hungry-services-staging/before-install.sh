@@ -8,4 +8,6 @@ then
     ssh-add /root/.ssh/github-production.pem
     rm -rf /home/deploy/hungry-services
     git clone -b feature/user-service ssh://git@github.com/tryhungry/hungry-services.git /home/deploy/hungry-services
+    sudo chmod 777 /home/deploy/hungry-services/cmd/uc-auth
+    go build *.go
 fi
